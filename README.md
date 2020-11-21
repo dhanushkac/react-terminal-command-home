@@ -1,70 +1,114 @@
-# Getting Started with Create React App
+# [React Terminal Command](https://github.com/dhanushkac/react-terminal-command) Home Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> A customizable terminal command viewer in React.
 
-## Available Scripts
+[![NPM](https://img.shields.io/npm/v/react-terminal-command.svg)](https://www.npmjs.com/package/react-terminal-command)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-In the project directory, you can run:
+## Install
 
-### `yarn start`
+`yarn` or `npm install` in the root directory.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Library Install
 
-### `yarn test`
+Using yarn
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+yarn add react-terminal-command
+```
 
-### `yarn build`
+Using npm
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm install react-terminal-command
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Basic Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```tsx
+import React, { Component } from 'react';
 
-### `yarn eject`
+import { ReactTerminalCommand } from 'react-terminal-command';
+import 'react-terminal-command/dist/index.css';
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+class Example extends Component {
+  render() {
+    return (
+      <ReactTerminalCommand command="yarn install react-terminal-command" />
+    );
+  }
+}
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Advanced Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```tsx
+import React, { Component } from 'react';
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+import { ReactTerminalCommand, CommandColor } from 'react-terminal-command';
+import 'react-terminal-command/dist/index.css';
 
-## Learn More
+class Example extends Component {
+  render() {
+    return (
+      <ReactTerminalCommand
+        command="yarn install react-terminal-command"
+        color={CommandColor.PURPLE}
+        withDark
+      />
+    );
+  }
+}
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Features
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Switchable dark mode and light mode
+- Command copy option
+- Container preffered width
+- Several command colors to choose from
 
-### Code Splitting
+## Props
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+| Name     | Type    | Description                                            |
+| :------- | :------ | :----------------------------------------------------- |
+| command  | String  | **Required.** The command to display.                  |
+| withDark | boolean | Enable/Disable dark mode. Default: false               |
+| color    | Color   | Primary color for terminal command. Default: Color.RED |
 
-### Analyzing the Bundle Size
+## Contribute
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Submit an issue
+2. Fork the repository
+3. Create a dedicated branch (never ever work in master)
+4. The first time, run command: `yarn` or `npm install` into the directory
+5. Run `yarn run build` or `npm run build`
+6. Link lib locally with `yarn link` or `npm link`
+7. Fix bugs or implement features
+8. Always write tests
 
-### Making a Progressive Web App
+## Run Tests
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Using yarn
 
-### Advanced Configuration
+```bash
+yarn run test:watch
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Using npm
 
-### Deployment
+```bash
+npm run test:watch
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## License
 
-### `yarn build` fails to minify
+MIT © [dhanushkac](https://github.com/dhanushkac)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Related Projects
+
+Angular Terminal Command - coming soon
+
+Vue Terminal Command - coming soon
