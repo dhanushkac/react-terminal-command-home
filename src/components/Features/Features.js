@@ -1,0 +1,25 @@
+import React from 'react';
+import styled from 'styled-components';
+import Feature from '../Feature/Feature';
+
+const FeatureBase = styled.div`
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 5rem;
+`;
+
+const Features = () => {
+  return (
+    <FeatureBase>
+      <Feature>Switchable dark mode and light mode 🌞</Feature>
+      <Feature>Command copy option 📃</Feature>
+      <Feature>Several command color options to choose from 💅</Feature>
+      <Feature>Container preffered width 📦</Feature>
+      <Feature>Written in Typescript 💻</Feature>
+      <Feature>Built with SCSS 🖌️</Feature>
+    </FeatureBase>
+  );
+};
+
+export default Features;
