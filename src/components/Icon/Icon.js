@@ -16,8 +16,8 @@ const IconBase = styled.i`
   }
 `;
 
-const Icon = ({ children }) => {
-  return <IconBase>{children}</IconBase>;
+const Icon = ({ children, onClick }) => {
+  return <IconBase onClick={onClick}>{children}</IconBase>;
 };
 
 export default Icon;

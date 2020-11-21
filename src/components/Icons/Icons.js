@@ -10,10 +10,19 @@ const IconsBase = styled.div`
 const Icons = () => {
   return (
     <IconsBase>
-      <Icon>
+      <Icon
+        onClick={() =>
+          window.open(
+            'https://github.com/dhanushkac/react-terminal-command',
+            '_blank'
+          )
+        }
+      >
         <GitHub color="black" size={'20px'} />
       </Icon>
-      <Icon>
+      <Icon
+        onClick={() => window.open('https://twitter.com/_dhanushkac', '_blank')}
+      >
         <Twitter color="black" size={'20px'} />
       </Icon>
     </IconsBase>
