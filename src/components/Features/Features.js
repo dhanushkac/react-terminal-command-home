@@ -14,10 +14,10 @@ const Features = () => {
     <FeatureBase>
       <Feature>Switchable dark mode and light mode 🌞</Feature>
       <Feature>Command copy option 📃</Feature>
-      <Feature>Several command color options to choose from 💅</Feature>
+      <Feature>Customizable command color options 💅</Feature>
       <Feature>Container preffered width 📦</Feature>
       <Feature>Written in Typescript 💻</Feature>
-      <Feature>Built with SCSS 🖌️</Feature>
+      <Feature>Built with styled-components 🖌️</Feature>
     </FeatureBase>
   );
 };

@@ -10,6 +10,7 @@ const Link = styled.a`
   text-decoration: none;
   font-weight: 500;
   color: mediumpurple;
+  transition: all 0.3s;
 
   &:hover {
     color: rebeccapurple;
