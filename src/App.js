@@ -1,4 +1,3 @@
-import { ReactTerminalCommand, CommandColor } from 'react-terminal-command';
 import { useState } from 'react';
 import styled from 'styled-components';
 
@@ -16,6 +15,7 @@ import Container from './components/Container/Container';
 import UpperContainer from './components/UpperContainer/UpperContainer';
 import Hero from './components/Hero/Hero';
 import HeroContent from './components/HeroContent/HeroContent';
+import ReactTerminalCommand from 'react-terminal-command';
 
 const AppBase = styled.div`
   display: flex;
@@ -25,7 +25,7 @@ const AppBase = styled.div`
 `;
 
 function App() {
-  const [color, setColor] = useState(CommandColor.RED);
+  const [color, setColor] = useState('#F44E3B');
   const [isDark, setDark] = useState(false);
 
   return (
