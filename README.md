@@ -6,6 +6,10 @@
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/79eccce4-3593-4419-8799-4d35e89d4aea/deploy-status)](https://app.netlify.com/sites/react-terminal-command/deploys)
 
+[🌠 Go to Home Page](https://react-terminal-command.netlify.app/)
+
+![React terminal command](https://github.com/dhanushkac/react-terminal-command-home/blob/main/public/lib-in-action.gif)
+
 ## Install
 
 `yarn` or `npm install` in the root directory.
