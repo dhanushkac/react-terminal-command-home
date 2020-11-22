@@ -12,7 +12,7 @@
 
 ---
 
-## Library Install
+## Install Library
 
 Using yarn
 
@@ -29,39 +29,40 @@ npm install react-terminal-command
 ## Basic Usage
 
 ```tsx
-import React, { Component } from 'react';
+import React from 'react';
 
-import { ReactTerminalCommand } from 'react-terminal-command';
-import 'react-terminal-command/dist/index.css';
+import ReactTerminalCommand from 'react-terminal-command';
 
-class Example extends Component {
-  render() {
-    return (
-      <ReactTerminalCommand command="yarn install react-terminal-command" />
-    );
-  }
-}
+const Example = () => {
+  return <ReactTerminalCommand command="yarn install react-terminal-command" />;
+};
 ```
 
 ## Advanced Usage
 
 ```tsx
-import React, { Component } from 'react';
+import React from 'react';
 
-import { ReactTerminalCommand, CommandColor } from 'react-terminal-command';
-import 'react-terminal-command/dist/index.css';
+import ReactTerminalCommand from 'react-terminal-command';
 
-class Example extends Component {
-  render() {
-    return (
-      <ReactTerminalCommand
-        command="yarn install react-terminal-command"
-        color={CommandColor.PURPLE}
-        withDark
-      />
-    );
-  }
-}
+const Example = () => {
+  return (
+    <ReactTerminalCommand
+      command="yarn install react-terminal-command"
+      color="#d40188"
+      withDark
+    />
+  );
+};
+```
+
+### Additional Info
+
+- _React Terminal Command_ is **container-width-preffered**. Use container width based on your application preference.
+- `color` prop supports both 6 digit and 3 digit hex codes. If your props has an issue default _red_ will be used and console will display an error below.
+
+```bash
+⛔️ Invalid hex color code provided. Default will be used.
 ```
 
 ## Features
@@ -77,7 +78,7 @@ class Example extends Component {
 | :------- | :------ | :----------------------------------------------------- |
 | command  | String  | **Required.** The command to display.                  |
 | withDark | boolean | Enable/Disable dark mode. Default: false               |
-| color    | Color   | Primary color for terminal command. Default: Color.RED |
+| color    | String  | Primary color for terminal command. Default: `#ff0000` |
 
 ## Contribute
 
@@ -90,18 +91,34 @@ class Example extends Component {
 7. Fix bugs or implement features
 8. Always write tests
 
+## Run Library
+
+Using yarn
+
+```bash
+yarn start
+```
+
+using npm
+
+```bash
+npm start
+```
+
+Application build will be triggered in watch moode.
+
 ## Run Tests
 
 Using yarn
 
 ```bash
-yarn run test:watch
+yarn test:watch
 ```
 
 Using npm
 
 ```bash
-npm run test:watch
+npm test:watch
 ```
 
 ## License
