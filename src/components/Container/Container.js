@@ -6,6 +6,14 @@ const Container = styled.div`
   text-align: left;
   position: relative;
   bottom: -3rem;
+
+  @media (max-width: 1200px) {
+    width: 60%;
+  }
+
+  @media (max-width: 960px) {
+    width: 80%;
+  }
 `;
 
 export default Container;
