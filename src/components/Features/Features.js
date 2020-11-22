@@ -15,7 +15,7 @@ const Features = () => {
       <Feature>Switchable dark mode and light mode 🌞</Feature>
       <Feature>Command copy option 📃</Feature>
       <Feature>Customizable command color options 💅</Feature>
-      <Feature>Container preffered width 📦</Feature>
+      <Feature>Container preferred width 📦</Feature>
       <Feature>Written in Typescript 💻</Feature>
       <Feature>Built with styled-components 🖌️</Feature>
     </FeatureBase>
