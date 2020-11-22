@@ -8,6 +8,8 @@
 
 [🌠 Go to Home Page](https://react-terminal-command.netlify.app/)
 
+![React terminal command](https://github.com/dhanushkac/react-terminal-command-home/blob/main/public/lib-in-action.gif)
+
 ## Install
 
 `yarn` or `npm install` in the root directory.
